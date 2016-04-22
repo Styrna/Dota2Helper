@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Dota2HelperFabric", "Dota2HelperFabric\Dota2HelperFabric.sfproj", "{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dota2Helper.WebApi", "Dota2Helper.WebApi\Dota2Helper.WebApi.csproj", "{344F248B-B062-41D2-8576-5AABC2901CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dota2Helper.Bootstrap", "Dota2Helper.Bootstrap\Dota2Helper.Bootstrap.csproj", "{CFDC3CB5-2082-4558-928F-37AD075D31E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dota2Helper.Common", "Dota2Helper.Common\Dota2Helper.Common.csproj", "{F338009A-C1FB-460B-B303-3080C115A102}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Debug|x64.ActiveCfg = Debug|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Debug|x64.Build.0 = Debug|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Debug|x64.Deploy.0 = Debug|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Release|Any CPU.ActiveCfg = Release|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Release|x64.ActiveCfg = Release|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Release|x64.Build.0 = Release|x64
+		{32E7C1E7-97B8-4D4B-9FA5-7B5FBF8C49B0}.Release|x64.Deploy.0 = Release|x64
+		{344F248B-B062-41D2-8576-5AABC2901CDA}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{344F248B-B062-41D2-8576-5AABC2901CDA}.Debug|x64.ActiveCfg = Debug|x64
+		{344F248B-B062-41D2-8576-5AABC2901CDA}.Debug|x64.Build.0 = Debug|x64
+		{344F248B-B062-41D2-8576-5AABC2901CDA}.Release|Any CPU.ActiveCfg = Release|x64
+		{344F248B-B062-41D2-8576-5AABC2901CDA}.Release|x64.ActiveCfg = Release|x64
+		{344F248B-B062-41D2-8576-5AABC2901CDA}.Release|x64.Build.0 = Release|x64
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Debug|x64.Build.0 = Debug|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Release|x64.ActiveCfg = Release|Any CPU
+		{CFDC3CB5-2082-4558-928F-37AD075D31E7}.Release|x64.Build.0 = Release|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Debug|x64.Build.0 = Debug|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Release|x64.ActiveCfg = Release|Any CPU
+		{F338009A-C1FB-460B-B303-3080C115A102}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
