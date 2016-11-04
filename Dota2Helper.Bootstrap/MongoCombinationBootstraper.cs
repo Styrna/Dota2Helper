@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dota2Helper.Common;
+using Dota2Helper.Common.Dto.Db;
 using log4net;
 using MongoDB.Driver;
 

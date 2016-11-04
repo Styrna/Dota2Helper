@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Dota2Helper.Common
+﻿namespace Dota2Helper.Common
 {
     public class Constraints
     {

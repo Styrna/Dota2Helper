@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using System.Collections.Generic;
 
-namespace Dota2Helper.Common
+namespace Dota2Helper.Common.Dto.Db
 {
     public class Stats2Vs2Document
     {

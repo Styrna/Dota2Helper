@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F338009A-C1FB-460B-B303-3080C115A102}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{0110A389-6A7B-4EF0-8E0C-6187EAF8B4FD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dota2Helper.Common</RootNamespace>
-    <AssemblyName>Dota2Helper.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Dota2Helper.Console</RootNamespace>
+    <AssemblyName>Dota2Helper.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,17 +37,8 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.2-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.3.10\lib\net45\NLog.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,29 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dto\MatchInfo.cs" />
-    <Compile Include="Seeding\Crawler.cs" />
-    <Compile Include="Dto\DotaApi\Match.cs" />
-    <Compile Include="Dto\DotaApi\Player.cs" />
-    <Compile Include="Dto\DotaApi\Result.cs" />
-    <Compile Include="Dto\DotaApi\RootObject.cs" />
-    <Compile Include="Dto\Db\HeroStatData.cs" />
-    <Compile Include="Log\Log.cs" />
-    <Compile Include="Log\LogFactory.cs" />
-    <Compile Include="Dto\Db\Stats1Vs1Document.cs" />
-    <Compile Include="Dto\Db\Stats2Vs2Document.cs" />
-    <Compile Include="Constraints.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Seeding\Persister.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="nlog.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fetching\" />
+    <ProjectReference Include="..\Dota2Helper.Common\Dota2Helper.Common.csproj">
+      <Project>{f338009a-c1fb-460b-b303-3080c115a102}</Project>
+      <Name>Dota2Helper.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
