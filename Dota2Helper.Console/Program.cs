@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using Dota2Helper.Common.Dto.DotaApi;
 using Dota2Helper.Common.Log;
 using Dota2Helper.Common.Seeding;
@@ -18,15 +19,15 @@ namespace Dota2Helper.Console
             Log.Trace("START");
             
             var crawler = new Crawler();
-
-            var result = crawler.GetMatches();
-
+            long lastMatchId = 500;
             while (true)
             {
-                Log.Info($"Got mataches {result.num_results}");
-                result = crawler.GetNextMatches(result.matches.Last().match_id);
+                var results = crawler.GetMatchHistoryBySequanceNum(lastMatchId, 100);
+                lastMatchId = results.matches.OrderByDescending(m => m.match_id).First().match_id;
+                Log.Info($"Got mataches {results.matches.Count} lastMatchId:{lastMatchId}");
+                Thread.Sleep(5000);
             }
-            
+
             Log.Trace("END");
             System.Console.ReadLine();
         }
